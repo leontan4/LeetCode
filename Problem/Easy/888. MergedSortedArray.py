@@ -1,3 +1,16 @@
+# Brute Force Solution
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        j = 0;
+        for i in range(m,m+n):
+            nums1[i] = nums2[j]
+            j += 1;
+        nums1.sort();
+
+# Efficient Solution
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
           """
@@ -16,15 +29,3 @@ class Solution:
               start2 += 1
 
           nums1.sort() #sort list
-        
-#Alternative Solution
-class Solution:
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
-        """
-        Do not return anything, modify nums1 in-place instead.
-        """
-        j = 0;
-        for i in range(m,m+n):
-            nums1[i] = nums2[j]
-            j += 1;
-        nums1.sort();
