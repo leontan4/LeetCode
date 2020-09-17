@@ -12,7 +12,7 @@ class Solution:
         else:
             return False
 
-# Efficient Solution    
+# Optimal Solution    
 class Solution:
     def isPalindrome(self, s: str) -> bool:
 	# upper case convert lower case

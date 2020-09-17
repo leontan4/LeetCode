@@ -1,37 +1,58 @@
+### Ignore this file, is jsut use for testing purposes. 
+
+
 n = int(input("Enter array length: "))
 
-nums = []
-nums2 = []
+outer = [] 
 
 for i in range(n):
-    x = int(input("Enter elements: "))
-    nums.append(x)
+    
+    inner = []
 
-nums.reverse()
+    for j in range(i+1):
 
-print(nums)
+        if(j==0 or j==i):
+            inner.append(1)
+        
+        else:
+            x = outer[i-1][j] + outer[i-1][j-1]
+            inner.append(x)
+    outer.append(inner)
 
-for j in range(n):
-    x = nums[j]
-    nums2.append(x)
+rowIndex = int(input("Enter which row to check: "))
 
-nums2.reverse()
+print(outer[rowIndex])
 
-if (nums == nums2):
-    print("True")
-else:
-    print("False")
+# if (n<=1):
+#     print(str(n))
+
+# if(n==2):
+#     n= n-1
+#     print(str(n))
+# else: 
+
+#     nums.append(0)
+#     nums.append(1)
+
+#     for i in range(n):
+#         x = nums[i-1] + nums[i-2]
+
+#         nums.append(x)
+
+# print(nums)
+
+
 
 # prev = {}
 # count = 0
 
 # for i in nums:
 #     if i in prev:
+
 #         count += prev.get(i)
 #         prev[i] += prev.get(i) + 1
-#         print(str(prev.get(i)))
+
 #     else:
 #         prev[i] = 1
 
-# print(count)
-
+#     print(count)
