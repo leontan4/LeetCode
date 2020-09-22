@@ -56,6 +56,7 @@ def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
             # if the absolute difference is lesser than outer, create empty array and add into it
             if abs(arr[i-1] - arr[i]) < abs(nums[0][0] - nums[0][1]):
                 nums = []
+                print("This one is empty: " + nums)
                 nums.append([arr[i-1], arr[i]])
 
             elif abs(arr[i-1] - arr[i]) == abs(nums[0][0] - nums[0][1]):
