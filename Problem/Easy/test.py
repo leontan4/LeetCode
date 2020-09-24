@@ -1,31 +1,44 @@
 ### Ignore this file, is use for testing purposes. 
 
 
-# n = int(input("Enter array length: "))
+n = int(input("Enter array length: "))
 
-vowels = "aeiou"
+arr = []
 
-string = str(input("Enter string: "))
+for i in range(n):
+    x = int(input("Enter element: "))
+    arr.append(x)
 
-for char in string:
-    if char in vowels:
+arr.sort()
+# k = int(input("Enter target: "))
 
-        
-        print(char)
+# low = 0
+# high = len(arr) - 1
+# mid = (high + low) / 2
+# while high - low > 1:
+#     count = 0
+#     for i in arr:
+#         if mid < i <= high:
+#             count += 1
 
+# print(count)
+# print(len(new_arr))
 
-# for i in range(1, n):
-#     if (result == []):
-#         result.append([arr[i-1], arr[i]])
-#         print("This is the first one: " + str(result))
+# class Solution(object):
+#     def findDuplicate(self, nums):
+#         low = 0
+#         high = len(nums) - 1
+#         mid = (high + low) / 2
+#         while high - low > 1:
+#             count = 0
+#             for i in nums:
+#                 if mid < i <= high:
+#                     count += 1
+#             if count > high - mid:
+#                 low = mid
+#             else:
+#                 high = mid
+#             mid = (high + low) / 2
+#         return high
 
-#     else:
-#         if abs(arr[i-1] - arr[i]) < abs(result[0][0] - result[0][1]):
-#             result = []
-#             print("This is the second one: " + str(result))
-#             result.append([arr[i-1], arr[i]])
-
-#         elif abs(arr[i-1] - arr[i]) == abs(result[0][0] - result[0][1]):
-#             result.append([arr[i-1], arr[i]])
-
-# print(result)
+print(3//2)
