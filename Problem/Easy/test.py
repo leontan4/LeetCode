@@ -1,15 +1,17 @@
 ### Ignore this file, is use for testing purposes. 
 
 
-n = int(input("Enter array length: "))
+# n = int(input("Enter array length: "))
 
-arr = []
+arr = 'abbceddrr'
 
-for i in range(n):
-    x = int(input("Enter element: "))
-    arr.append(x)
+for i in range(1, len(arr)):
+    if(arr[i] == arr[i-1]):
+        print("False")
 
-arr.sort()
+
+
+# arr.sort()
 # k = int(input("Enter target: "))
 
 # low = 0
@@ -41,4 +43,4 @@ arr.sort()
 #             mid = (high + low) / 2
 #         return high
 
-print(3//2)
+# print(3//2)
