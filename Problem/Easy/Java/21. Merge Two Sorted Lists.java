@@ -8,8 +8,6 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-
-// Optimal Solution
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         
@@ -38,17 +36,10 @@ class Solution {
             pos = pos.next;    
         }
         
-        while(l1 != null) {
-            pos.next = l1;
-            pos = pos.next;
-            l1 = l1.next;
-        }
-        
-        while(l2 != null) {
+        if (l1 == null){
             pos.next = l2;
-            pos = pos.next;
-            l2 = l2.next;
-        }
+        } else
+            pos.next = l1;
     
         return head.next;
     }
