@@ -8,9 +8,11 @@ class Solution {
 
             res += count[a]++; 
 	    // Will add each occurence of same element by 1.
-	    // Example: when 1 occurs the second time for array[1, 2, 3, 1]
+	    // Example 1: when 1 occurs the second time for array[1, 2, 3, 1]
 	    // [0, 0, 0, 1]
 
+	    // Example 2: when 1 occurs the third time for array[1, 2, 3, 1, 4, 1]
+	    // [0, 0, 0, 1, 0, 2]
 	   
         }
         return res;
