@@ -15,6 +15,8 @@ class Solution {
             }
         }
         
+	// This is in case both arrays are length of 1
+	// Example: [0] and [1] will result in 1
         while (j >= 0) {
             nums1[k--] = nums2[j--];
         }
