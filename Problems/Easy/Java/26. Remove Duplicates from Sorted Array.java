@@ -1,4 +1,21 @@
-//Brute Force Solution - Time O(n), Space O(1)
+//Optimal Solution - Cleanr Code
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        
+        int j=0;
+        
+        for (int i=1; i<nums.length; i++){
+            if(nums[i]!=nums[j]){
+		//NOTE: nums[j++], means after return nums[j], j will increment
+	//nums[++j], means j will increment first, then only return nums[j].
+                nums[++j] = nums[i];
+            }
+        }
+        return j+1;
+    }
+}
+
+//Optimal Solution - Time O(n), Space O(1) (Messy Code)
 class Solution {
     public int removeDuplicates(int[] nums) {
         
