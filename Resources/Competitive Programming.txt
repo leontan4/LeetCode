@@ -1,0 +1,136 @@
+NUMBER THEORY
+
+1  pattern printing
+2  time complexity
+3  linear search  circular array
+4  palindrome numbers(perfect , armstrong)basic
+5  simple hasing problems
+6  prefix sums both 1d and 2d
+7  sliding window technique
+8  binary search 
+9  gcd in logn (Euclidean and Extended eucledian algorithm)
+10 Linear diphantime equation
+11 checking primes in sqrt(n)
+12 Sieve of Eratosthenes
+13 Segmented Sieve
+14 Finding the prime factorization of a number in Logn/query
+15 Euler totient function(hackerearth)
+16 Fermat Little Theorem(hackerearth)
+17 Wilson's theorem(hackerearth)
+
+1 Finding x^n in logn
+2 Modular Arithmetic
+3 Modular Inverse of a number
+4 Modular exponentiation
+5 Chinese Remainder Theorem
+6 Factorial Modulo
+7 Finding nCr and nPr for queries in O(1) time
+8 Inclusion Exclusion Principle(Not DP) Cobinatrics (Hackerearth,codeforces)
+
+***********************************************
+
+1  Basic Sorting Algorithms(Bubble , Selection , Insertion)
+2  constructive and swapping terms in it
+3  2 pointer approach
+4  Bit Manipulation
+5  Power Set of a given array
+6  Number of Subarrays with XOR as 0 (MUST do problem)
+7  Kadane Algo(Greedy) - Solve problems
+8  Job Sequencing and Activity Selection(Greedy) -Solve greedy problems on codeforces
+9  Recursion (Factorial etc)(helps in Dp)
+10 Implement Binary search using recursion
+11 Implement Modular Exponentiation using recursion
+12 Subset with given sum using recursion and other prob
+13 Merge Sort and quick sort  
+14 quick inversion and problems related to quick and merge sort
+15 Backtracking problems like Sudoko and N queen(helps in Dp ) 
+16 Meet in middle Algorithms and prob related to it
+17 divide and conquer problems(codeforces only)
+18 Next Greater/smaller element using stack
+19 Prob related to paranthesis
+20 Largest Rectangular Area in Histogram(imp)
+21 Problems related to Heap(Priority queue) 
+ 
+***************************************************
+
+1 Hashing on Strings
+2 Rabin karp Algorithm
+3 Prefix Function
+4 KMP Algorithm
+5 Z-function
+6 manacher's Algorithm
+
+Try to go through blogs and not videos 25-30 problems each
+
+*****************************************************
+
+TREE/GRAPH
+
+1 Tree/Graph
+2 DFS/BFS Traversal in Graph/Tree
+3 Diameter of Tree
+4 euler Tour of Tree
+5 Finding LCA using Euler Tour
+6 Finding LCA using Binary Lifting
+7 Distance between two nodes
+8 Subtree Problems
+9 Solve problems on the above Algorithms
+
+Graph
+
+1 connected Components
+2 Topological Sort
+3 Cycle Detection in Graph
+4 Bipartite Check in Graph
+5 SCC using Kosaraju's Algorithm
+6 Dijstra's Algorithm
+7 Bellman Ford Algorithm
+8 Floyd Warshall Algorithm
+
+25-30 problems each from (Hacker earth)
+
+1 Bridges in Graph
+2 Articulation Point in Graph
+3 Minimum Spanning Tree using Kruskal's Also
+4 Prim's Algorithm
+5 0/1 BFS (CP Algorithm)
+6 Finding Bridges online
+
+******************************************************
+
+Dynamic Programming 
+
+first solve using recursion not iteration
+
+1 Common problems 
+2 Atcoder Educational contest DP 
+3 Problems from (SPOJ then codeforces)
+4 recurrence for Digit DP(CF blog)
+5 Dp with bitmasks
+6 DP on trees
+7 SOS DP
+
+******************************************************
+
+1 Disjoint Set(Using all optimization)
+2 Offline Queries using Disjoint set
+3 Kruskal's Algorithm
+4 Sparse Table(Not much imp)
+5 Fenwick Tree
+6 Binary Lifting on Fenwick Tree
+7 Matrix Exponentiation
+8 Sqrt Decompostion Technique
+9 Update and Query Opeartions
+10 Mo's Algorithm / algo on trees
+11 Segment Trees(Range Queries and Point Updates) 
+12 Lazy Propagation on Segement Trees
+
+*****************************************************
+
+RARE
+
+1 Sprague-Grundy Theorem
+2 Flows and Realted Problems
+3 Heavy LIght Decompostion(Anudeep)
+4 Convex Hull Algorithm(Meow)
+5 FFT/NTT
