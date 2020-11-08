@@ -9,7 +9,7 @@ class Solution {
         for (int i=0; i<nums.length; i++){
             y = nums[i];
             x = target - y;
-
+            
             if(calc.containsKey(x)){
                 return new int[] {calc.get(x), i};
             }
