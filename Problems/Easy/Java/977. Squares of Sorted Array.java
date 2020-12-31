@@ -6,6 +6,5 @@ class Solution {
         }
         Arrays.sort(arr);
         return arr;
-        
     }
 }
