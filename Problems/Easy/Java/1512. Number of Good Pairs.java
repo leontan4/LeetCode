@@ -1,4 +1,30 @@
-//Optimal Solution (shorter code)
+//Optimal Solution (HastMap/Math)
+class Solution {
+    public int numIdenticalPairs(int[] nums) {
+        int count=0;
+        
+        if(nums.length <= 1){
+            return count;
+        }
+        
+        Map<Integer, Integer> arr = new HashMap<>();
+
+        for(int i=0; i<nums.length; i++){
+            if(arr.containsKey(nums[i])){
+                arr.put(nums[i], arr.get(nums[i])+1);
+                if(arr.get(nums[i])>2){
+                    count+=arr.get(nums[i]) - 2;
+                }
+                count++;
+            } else{
+                arr.put(nums[i], 1);
+            }
+        }
+        return count;
+    }
+}
+
+//Optimal Solution (Counting)
 class Solution {
     public int numIdenticalPairs(int[] A) {
         int res = 0, count[] = new int[101];
