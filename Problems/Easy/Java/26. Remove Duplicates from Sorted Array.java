@@ -1,4 +1,18 @@
-//Optimal Solution - Cleanr Code
+//My own code - Optimal Solution
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int i = 0;
+
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != nums[i]) {
+                nums[++i] = nums[j];
+            }
+        }
+        return i+1;
+    }
+}
+
+//Optimal Solution - Cleaner Code
 class Solution {
     public int removeDuplicates(int[] nums) {
         
@@ -6,8 +20,10 @@ class Solution {
         
         for (int i=1; i<nums.length; i++){
             if(nums[i]!=nums[j]){
+
 		//NOTE: nums[j++], means after return nums[j], j will increment
-	//nums[++j], means j will increment first, then only return nums[j].
+		//nums[++j], means j will increment first, then only return nums[j].
+
                 nums[++j] = nums[i];
             }
         }
