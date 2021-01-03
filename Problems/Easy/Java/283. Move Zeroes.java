@@ -23,7 +23,8 @@ class Solution {
     }
 }
 
-//Optimal Solution (Two pointers like Brute Force but with better implementation)
+//Optimal Solution (Two pointers but with better implementation)
+//This solution same with Question 27. Remove Elements
 class Solution {
     public void moveZeroes(int[] nums) {
         
