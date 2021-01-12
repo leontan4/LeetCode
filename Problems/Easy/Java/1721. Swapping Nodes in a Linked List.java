@@ -1,4 +1,3 @@
-//Brute Force
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -9,6 +8,37 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+//Optimal Solution - Time O(n), Space O(1)
+//Two Pointer
+class Solution {
+    public ListNode swapNodes(ListNode head, int k) {
+        ListNode currNode=head, frontNode=null, endNode = null;
+        int length = 0;
+        
+        while(currNode != null){
+            length++;
+            
+            if(endNode != null){
+                endNode = endNode.next;
+            }
+            
+            if(length == k){
+                frontNode = currNode;
+                endNode = head;
+            }
+            
+            currNode = currNode.next;
+        }
+        
+        int temp = frontNode.val;
+        frontNode.val = endNode.val;
+        endNode.val = temp;
+        
+        return head;
+    }
+}
+
+//Brute Force
 class Solution {
     public ListNode swapNodes(ListNode head, int k) {
         if(head.next == null){
