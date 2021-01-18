@@ -13,6 +13,20 @@
  *     }
  * }
  */
+
+//Optimal Solution - Time O(n), Space O(n)
+//Recursion Method
+class Solution {
+    public int maxDepth(TreeNode root) {
+        if(root == null) return 0;
+        
+        int left = maxDepth(root.left);
+        int right = maxDepth(root.right);
+        int max = 1 + Math.max(left, right);
+        return max;
+    }
+}
+
 //Brute Force - Time O(n), Space O(n)
 //Breadth First Search (BFS)
 class Solution {
