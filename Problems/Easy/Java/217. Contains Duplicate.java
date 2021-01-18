@@ -1,4 +1,5 @@
-// Optimal Solution
+// Optimal Solution - Time O(nlogn), Space O(1)
+// Sorting and Two Pointers
 public class Solution {
     public boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
@@ -11,7 +12,8 @@ public class Solution {
     }
 }
 
-// Brute Force Solution
+// Brute Force - Time O(n), Space O(n)
+// HashMap
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         Map<Integer, Integer> dict = new HashMap<Integer, Integer>();
