@@ -9,6 +9,30 @@
  * }
  */
 
+//Optimal Solution - Time O(n), Space O(1)
+//Better Code Implementation
+class Solution {
+    public ListNode oddEvenList(ListNode head) {
+        
+        if(head == null || head.next == null){
+            return head;
+        }
+        
+        ListNode odd = head;
+        ListNode even = head.next;
+        ListNode curr = head.next;
+                
+        while(even != null && even.next != null){
+            odd.next = even.next;
+            odd = even.next;
+            even.next = odd.next;
+            even = odd.next;
+        }
+        odd.next = curr;
+        return head;
+    }
+}
+
 //Brute Force - Time O(n), Space O(1)
 class Solution {
     public ListNode oddEvenList(ListNode head) {
