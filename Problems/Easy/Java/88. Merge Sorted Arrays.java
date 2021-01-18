@@ -1,5 +1,4 @@
 // Optimal Solution
-
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         
@@ -21,6 +20,6 @@ class Solution {
             nums1[k--] = nums2[j--];
         }
 
-	// Do not need to println
+	// Do not need to return
     }
 }

@@ -1,4 +1,5 @@
-//Optimal Solution --> Time and Space O(n)
+//Optimal Solution - Time and Space O(n)
+//HashMap
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         

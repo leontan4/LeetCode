@@ -11,8 +11,6 @@
 
 // Optimal Solution
 class Solution {
-    
-    
     public ListNode reverseList(ListNode head) {
         
         ListNode prev = null;
@@ -26,8 +24,6 @@ class Solution {
             head = next_node;
             
         }
-        
         return prev;
-        
     } 
 }

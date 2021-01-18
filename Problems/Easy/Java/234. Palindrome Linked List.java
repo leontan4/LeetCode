@@ -1,4 +1,16 @@
-//Optimal Solution --> using one pointer isntead of two pointer
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+
+// Optimal Solution
+// using one pointer instead of two pointers
 class Solution {
     public boolean isPalindrome(ListNode head) {
         if(head == null) return true;
@@ -44,17 +56,8 @@ class Solution {
     }
 }
 
+//---------------------------------------------------------------------
 // Fast Solution
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
 class Solution {
     public boolean isPalindrome(ListNode head) {
         ListNode slow = head, fast = head;

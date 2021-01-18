@@ -1,4 +1,5 @@
-// Optimal Solution - Recursion method
+// Optimal Solution
+// Recursion method
 class Solution {
     public List<Integer> getRow(int row) {
         if (row == 0){

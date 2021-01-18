@@ -1,4 +1,5 @@
-// Brute Force - Better than Solution 1 - 3 on LeetCode
+// Brute Force
+// Better than Solution 1 - 3 on LeetCode
 class Solution {
     public int singleNumber(int[] nums) {
         

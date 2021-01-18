@@ -1,4 +1,4 @@
-// Optimal Solution --> Time O(1); Space O(1)
+// Optimal Solution - Time O(1); Space O(1)
 // Note: Always O(1) for time when add and remove; O(n) for searching
 
 class Solution {
@@ -11,7 +11,6 @@ class Solution {
 }
 
 // Full code to write LinkedList
-
 public class Node {
 	Node next;
 	int data;
@@ -23,6 +22,4 @@ public class Node {
 
 public class LinkedList {
 	Node head;
-	
-
 }
