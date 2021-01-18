@@ -10,7 +10,7 @@
  */
 
 // Optimal Solution
-// using one pointer instead of two pointers
+// Using one pointer instead of two pointers
 class Solution {
     public boolean isPalindrome(ListNode head) {
         if(head == null) return true;
@@ -57,7 +57,7 @@ class Solution {
 }
 
 //---------------------------------------------------------------------
-// Fast Solution
+// Better Solution
 class Solution {
     public boolean isPalindrome(ListNode head) {
         ListNode slow = head, fast = head;
@@ -92,7 +92,6 @@ class Solution {
             prev = head;
             head = next_node;
         }
-        
         return prev;
     }
 }
