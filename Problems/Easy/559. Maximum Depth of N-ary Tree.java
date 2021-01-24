@@ -18,6 +18,7 @@ class Node {
 */
 
 // Brute Force
+// BFS
 class Solution {
     public int maxDepth(Node root) {
         if(root == null) return 0;
