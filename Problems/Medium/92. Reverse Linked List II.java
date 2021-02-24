@@ -1,5 +1,3 @@
-// Brute Force
-// Fast & Slow Pointers
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -10,6 +8,40 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+// Optimal Solution - Time O(n), Space O(1)
+// Two Pointers (dummy, start, end)
+class Solution {
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        if(left == right){
+            return head;
+        }
+        
+        ListNode prev = new ListNode(0);
+        ListNode curr = prev;
+        
+        prev.next = head;
+        
+        for(int i=0; i < left-1; i++){
+            prev = prev.next;
+        }
+        
+        ListNode start = prev.next;  // equivalent to head
+        ListNode end = start.next;  // equivalent to next_node
+        
+        for(int i=0; i < right-left; i++){
+            start.next = end.next;
+            end.next = prev.next;
+            prev.next = end;
+            end = start.next;
+        }
+        
+        return curr.next;
+    }
+}
+
+// Brute Force
+// Fast & Slow Pointers
 class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
         
