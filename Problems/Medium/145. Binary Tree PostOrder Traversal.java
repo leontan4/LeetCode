@@ -14,6 +14,44 @@
  * }
  */
 // Optimal Solution - Time O(n), Space O(n)
+// Depth First Search + Stack + Two Pointers
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List <Integer> post = new LinkedList<>();
+        if(root == null) return post;
+        
+        Stack <TreeNode> stack = new Stack<>();
+        TreeNode curr = root, prev = null;
+        
+        while(!stack.isEmpty() || curr != null){
+            
+            // Keep on iterating towards the leftmost node
+            while(curr != null){
+                stack.push(curr);
+                curr = curr.left;
+            }
+            
+            // If there is no right child
+            // or right child is the one that we recently visited
+            // it means we have traversed all the nodes of stack.peek()
+            if(stack.peek().right == null || stack.peek().right == prev){
+                
+                // we will update the prev node
+                prev = stack.pop();
+                post.add(prev.val);
+            } else{
+                
+                // Otherwise there is a right child and
+                // we will visit the right child
+                curr = stack.peek().right;
+            }
+        }
+        
+        return post;
+    }
+}
+
+// Optimal Solution - Time O(n), Space O(n)
 // Depth First Search + Stack (Two Stacks)
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
