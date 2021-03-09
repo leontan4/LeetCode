@@ -14,7 +14,7 @@
  * }
  */
 // Optimal Solution - Time O(n), Space O(n)
-// Depth First Search + Stack + Two Pointers
+// Depth First Search + Stack + Two Pointers (One Stack)
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List <Integer> post = new LinkedList<>();
