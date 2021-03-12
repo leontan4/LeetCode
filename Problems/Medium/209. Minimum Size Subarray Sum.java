@@ -1,4 +1,4 @@
-// Brute Force = Time O(n), Space O(n)
+// Optimal Solution - Time O(n), Space O(n)
 // Sliding Window
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
