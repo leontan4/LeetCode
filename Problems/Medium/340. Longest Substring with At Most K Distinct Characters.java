@@ -22,7 +22,6 @@ class Solution {
                 if (map.get(s.charAt(winStart)) == 0) {
                     map.remove(s.charAt(winStart));
                 }
-
                 winStart++;
             }
         }
